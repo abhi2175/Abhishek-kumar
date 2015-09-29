@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tapestry"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Speed" >
+
+    <TextView
+        android:id="@+id/textViewselectspeedparameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Select Conversion Unit"
+        android:textColor="#347C17"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Spinner
+        android:id="@+id/spinnerspeedunit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewselectspeedparameter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
+    <EditText
+        android:id="@+id/editTextspeedvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerspeedunit"
+        android:layout_below="@+id/spinnerspeedunit"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Enter the value"
+        android:inputType="numberDecimal"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/convertspeedbutton"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextspeedvalue"
+        android:layout_below="@+id/editTextspeedvalue"
+        android:layout_marginTop="42dp"
+        android:text="Convert" />
+
+    <TextView
+        android:id="@+id/speedresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/convertspeedbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Result"
+        android:textColor="#008080"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+</RelativeLayout>
