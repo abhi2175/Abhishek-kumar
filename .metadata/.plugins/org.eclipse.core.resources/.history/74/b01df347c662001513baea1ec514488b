@@ -1,0 +1,38 @@
+package com.jspiders.widgets;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.RadioButton;
+import android.widget.Toast;
+
+public class MainActivity extends Activity {
+
+    
+	RadioButton radiobuttonoption1;
+	
+	@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+       radiobuttonoption1=(RadioButton) findViewById(R.id.radioButtonoption1); 
+       
+       radiobuttonoption1.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+		
+		@Override
+		public void onCheckedChanged(CompoundButton arg0, boolean state) {
+			
+			if(state==true)
+			{
+				Toast.makeText(MainActivity.this,"you have selected option1",Toast.LENGTH_SHORT).show();
+			}
+		}
+	});
+       
+    
+
+}
+    

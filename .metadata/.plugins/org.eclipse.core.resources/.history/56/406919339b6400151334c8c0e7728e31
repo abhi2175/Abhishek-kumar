@@ -1,0 +1,22 @@
+package com.jspiders.unitconverter;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.EditText;
+
+public class TempConversion extends Activity {
+	
+    EditText editTextentervalue;
+	@Override
+	protected void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_temp_conversion);
+		
+		editTextentervalue=(EditText) findViewById(R.id.editTextentervalue);
+		
+		editTextentervalue.setText("working");
+	}
+
+
+}

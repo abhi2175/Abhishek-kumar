@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;pager_title_strip&apos; in &apos;com.example.example.R.id&apos; to &apos;strip&apos;&#x0D;&#x0A;- Original project: &apos;example&apos;&#x0D;&#x0A;- Original element: &apos;com.example.example.R.id.pager_title_strip&apos;&#x0D;&#x0A;- Renamed element: &apos;com.example.example.R.id.strip&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="true" description="Rename field &apos;pager_title_strip&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/gen&lt;com.example.example{R.java[R[id^pager_title_strip" name="strip" references="true" setter="false" stamp="1443283800360" textual="false" version="1.0"/>
+</session>
